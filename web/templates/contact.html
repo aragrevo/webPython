@@ -1,0 +1,72 @@
+{% extends "layout.html "%}
+
+{% block contact %}
+
+<div class="contact" id="contact">
+<div class="wrap">
+    <h2>Contact Us</h2>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eligendi fugit eos velit odio, minus aliquam aperiam autem expedita corrupti?</h4>
+    <div class="section group">
+        <div class="col span_2_of_3">
+            <div class="contact-form">
+                <form method="post" action="#">
+
+                    <input type="text" class="textbox" value="Your Name" onfocus="this.value = '';"
+                        onblur="if (this.value == '') {this.value = 'Your  Name';}">
+                    <input type="text" class="textbox" value="Your Email" onfocus="this.value = '';"
+                        onblur="if (this.value == '') {this.value = 'Your Email';}">
+                    <div class="clear"> </div>
+
+                    <div>
+                        <textarea value="Your Message:" onfocus="this.value = '';"
+                            onblur="if (this.value == '') {this.value = 'Your Message';}">Your Message...</textarea>
+                    </div>
+                    <span><input type="submit" class="" value="Submit"></span>
+                    <div class="clear"></div>
+                </form>
+            </div>
+        </div>
+        <div class="col span_1_of_3">
+            <div class="company_address">
+                <h5>INFORMATION</h5>
+                <ul class="list3">
+                    <li>
+                        <img src="../static/images/location.png" alt="" />
+                        <div class="extra-wrap">
+                            <p>Lorem ipsum consectetu</p>
+                            <p>12345-Lorem ipsum consectetu</p>
+                            <p>Lorem ipsum , consectetu</p>
+                        </div>
+                        <div class="clear"> </div>
+                    </li>
+
+                    <li>
+                        <img src="../static/images/phone.png" alt="" />
+                        <div class="extra-wrap">
+                            <p>+1 800(Phone) 258 2598</p>
+                        </div>
+                        <div class="clear"> </div>
+                    </li>
+                    <li>
+                        <img src="../static/images/fax2.png" alt="" />
+                        <div class="extra-wrap">
+                            <p>+1 500(Tax) 6343 8690</p>
+                        </div>
+                        <div class="clear"> </div>
+                    </li>
+                    <li>
+                        <img src="../static/images/mail.png" alt="" />
+                        <div class="extra-wrap">
+                            <p> <a href="mailto:info@mycompany.com"> info(at)appstore.com</a></p>
+                        </div>
+                        <div class="clear"> </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+</div>
+
+{% endblock %}
